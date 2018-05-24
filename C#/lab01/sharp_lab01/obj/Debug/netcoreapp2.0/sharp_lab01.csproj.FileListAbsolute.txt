@@ -1,0 +1,11 @@
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\bin\Debug\netcoreapp2.0\sharp_lab01.deps.json
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\bin\Debug\netcoreapp2.0\sharp_lab01.runtimeconfig.json
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\bin\Debug\netcoreapp2.0\sharp_lab01.runtimeconfig.dev.json
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\bin\Debug\netcoreapp2.0\sharp_lab01.dll
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\bin\Debug\netcoreapp2.0\sharp_lab01.pdb
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\obj\Debug\netcoreapp2.0\sharp_lab01.csprojResolveAssemblyReference.cache
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\obj\Debug\netcoreapp2.0\sharp_lab01.csproj.CoreCompileInputs.cache
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\obj\Debug\netcoreapp2.0\sharp_lab01.AssemblyInfoInputs.cache
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\obj\Debug\netcoreapp2.0\sharp_lab01.AssemblyInfo.cs
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\obj\Debug\netcoreapp2.0\sharp_lab01.dll
+C:\Users\Andrey\source\repos\sharp_lab01\sharp_lab01\obj\Debug\netcoreapp2.0\sharp_lab01.pdb
