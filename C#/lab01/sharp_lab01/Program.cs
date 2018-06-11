@@ -1,4 +1,8 @@
-﻿using System;
+// by Andrii Semchenko, group IP-63
+
+// implementation based on Prim's algorithm
+
+using System;
 
 namespace sharp_lab01
 {
