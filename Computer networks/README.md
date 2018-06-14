@@ -1,0 +1,1 @@
+# Solved labs for 'Computer networks' subject
