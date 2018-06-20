@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>News</title>
+	<style>
+		h1, p, table, a {
+			color: #20C20E;
+			text-align: center;
+		}
+		table {
+			border-collapse: collapse;
+			border-color: #20C20E;
+			margin-bottom: 50px;
+		}
+	</style>
+</head>
+<body style="background-color: black;">
+	<h1> Here placed all news</h1>
+	<% for @article in @article_list %>
+		<table align="center" border="1" width="80%">
+			<tr>
+				<td> Author: <a href="/news/authors/<%= @article.author.id %>"><%= @article.author.name %></a></td>
+				<td> Branch: <a href="/news/branches/<%= @article.branch.id %>"><%= @article.branch.branch %></a> </td>
+				<td> Date: <%= @article.created_at %></td>
+			</tr>
+			<tr>
+				<td colspan="3"> Title: <%= @article.title %></td>
+			</tr>
+			<tr>
+				<td colspan="3" height="100"> <%= @article.text %></td>
+			</tr>
+		</table>
+	<% end %>
+	<a href="/news/addArticle"><p>Create new article</p></a>
+</body>
+</html>

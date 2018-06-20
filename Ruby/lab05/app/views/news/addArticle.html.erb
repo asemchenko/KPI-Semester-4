@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add new article</title>
+	<style>
+		h1, p, table, a {
+			color: #20C20E;
+			text-align: center;
+		}
+		table {
+			border-collapse: collapse;
+			border-color: #20C20E;
+			margin-bottom: 50px;
+		}
+	</style>
+	<link rel="stylesheet" media="all" href="/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true" />
+	<link rel="stylesheet" media="all" href="/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true" />
+	<link rel="stylesheet" media="all" href="/assets/branches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true" />
+	<link rel="stylesheet" media="all" href="/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true" />
+	<link rel="stylesheet" media="all" href="/assets/scaffolds.self-04c87a3b226970aaa6264a85050301903a30572fb1672f46556705b04deac3a1.css?body=1" data-turbolinks-track="true" />
+	<link rel="stylesheet" media="all" href="/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" data-turbolinks-track="true" />
+	  <script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="true"></script>
+	<script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" data-turbolinks-track="true"></script>
+	<script src="/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" data-turbolinks-track="true"></script>
+	<script src="/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="true"></script>
+	<script src="/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="true"></script>
+	<script src="/assets/branches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="true"></script>
+	<script src="/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="true"></script>
+	<script src="/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" data-turbolinks-track="true"></script>
+	  <meta name="csrf-param" content="authenticity_token" />
+	<meta name="csrf-token" content="OyYkkvde4kGzt8+AZJ1pdr2QOCZuPA3uH4ue5mGNJxW/ZHmPrT4ntQJaYnu4gIPwTjbAjY7BqRqJwoBdCxRSxw==" />
+</head>
+<body style="background-color: black;">
+	<h1>Create new article</h1>
+	<div style="color:#20C20E; text-align: center;">
+		<form class="new_article" id="new_article" action="/articles" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="s5As2uR5q2N0jUDG7f5JAMxK0F2eGOObh/ygnJ5hS5k30nHHvhlul8Vg7T0x46OGP+wo9n7lR28Rtb4n9Pg+Sw==" />
+		  <div class="field">
+		    <label for="article_branch_id">Branch</label><br>
+		    <select name="article[branch_id]" id="article_branch_id">
+		    	<% for @branch in @branches %>
+					<option value="<%= @branch.id %>"><%= @branch.branch %></option>
+				<% end %>
+		    </select>
+		  </div>
+		  <div class="field">
+		    <label for="article_author_id">Author</label><br>
+		   <!-- <input type="number" name="article[author_id]" id="article_author_id" style="width:60%;"/> -->
+		   <select name="article[author_id]" id="article_author_id">
+			    <% for @author in @authors %>
+				    	<option value="<%= @author.id %>"><%= @author.name %></option>
+			    <% end %>
+		    </select>
+		  </div>
+		  <div class="field">
+		    <label for="article_title">Title</label><br>
+		    <input type="text" name="article[title]" id="article_title" style="width:60%;"/>
+		  </div>
+		  <div class="field">
+		    <label for="article_text">Text</label><br>
+		    <textarea name="article[text]" id="article_text" style="width:60%; height: 50px;" value="" placeholder="Put article text here">
+		</textarea>
+		  </div>
+		  <div class="actions">
+		    <input type="submit" name="commit" value="Create Article" />
+		  </div>
+		</form>
+	</div>
+</body>
+</html>
